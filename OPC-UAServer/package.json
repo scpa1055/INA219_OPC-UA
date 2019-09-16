@@ -1,0 +1,26 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Schuster",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.0",
+    "express-ws": "^4.0.0",
+    "jquery": "^3.4.1",
+    "node-opcua": "^0.7.2",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "sockjs": "^0.3.19",
+    "sockjs-client": "^1.3.0",
+    "sockjs-client-ws": "^0.1.0",
+    "stomp-client": "^0.9.0",
+    "stompjs": "^2.3.3",
+    "websocket": "^1.0.28"
+  }
+}

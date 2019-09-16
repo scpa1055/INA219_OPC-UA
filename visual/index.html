@@ -1,0 +1,144 @@
+<html>
+  <head>
+       <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+    
+    <style>
+        #cvs{
+            position: relative;
+            left: 0;
+            
+        }
+        #cvs2{
+            position: relative;
+          
+            right: 0;
+        }
+        #header{
+            background-color: #F8F8F8;
+            height: 50px;
+            border-bottom: 1px ridge #DFE4E7;
+            text-align: center;
+        }
+        #canvasHolder{
+            
+            background-color: #F4F5F5;
+            border-bottom: 1px ridge #DFE4E7;
+            height: 350px;
+        }
+        h3{
+            text-align: center;
+            
+        }
+        #main-content{
+            background-color: #333333;
+            width: 100%;
+            color: white;
+        }
+        #connect{
+            margin-left: 100px;
+            color:white;
+        }
+        #disconnect{
+        
+            color:white;
+        }
+        #all{
+            border: 1px ridge #DFE4E7;
+            padding:0;
+        }
+        #canvas1{
+            width: 400px;
+           margin-top: 20px;
+            margin-left: 170px;
+            
+        }
+        #canvas2{
+            width:400px;
+            margin-top: 20px;
+            
+        }
+        #status{
+             background-color: #F8F8F8;
+            height: 50px;
+            width: 100%;
+        }
+        #status h4{
+            width: 100px;
+            
+        }
+        .alert {
+            width: 200px;
+           margin-left: 190px;
+            height: inherit;
+        }
+        #info{
+            width: 100px;
+        }
+    </style>
+  <body>
+      
+      <div id="all" class="container">
+        <div id="main-content" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="connect">WebSocket connection:</label>
+                            <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                            <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>       
+        </div>
+      <div id="header" class="">
+        <h2> Smart Nodes</h2>
+      </div>
+      <div  id="canvasHolder" class="container-fluid">
+          <div id="canvas1" class="float-left">
+              <h3>Maschine 1</h3>
+              <canvas id="cvs" width="400" height="250">[No canvas support]</canvas>
+              
+          </div>
+            
+          <div id="canvas2" class="float-left">
+              <h3>Maschine 2</h3>
+              <canvas id="cvs2" width="400" height="250">[No canvas support]</canvas>
+              
+          </div>
+          
+         
+      </div>
+          <div id="status" class="">
+                <div id="info" class="float-left">
+              <h4>Status:</h4>
+              </div> 
+              
+              <div id="alert1" class="alert alert-success float-left" role="alert">
+               
+            </div>
+              <div id="alert2" class="alert alert-success float-left" role="alert">
+               
+            </div>
+          </div>
+          
+          
+     </div>
+     
+    
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+      <script src="RGraph.common.core.js"></script>
+      <script src="RGraph.common.dynamic.js"></script>
+      <script src="RGraph.common.effects.js"></script>
+      <script src="RGraph.semicircularprogress.js"></script>
+      <script src="RGraph.gauge.js"></script>
+      <script src="RGraph.line.js"></script>
+      
+    <script src="index.js"></script>
+  </body>
+</html>

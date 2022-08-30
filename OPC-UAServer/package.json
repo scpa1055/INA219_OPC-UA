@@ -13,7 +13,7 @@
     "express": "^4.17.0",
     "express-ws": "^4.0.0",
     "jquery": "^3.4.1",
-    "node-opcua": "^0.7.2",
+    "node-opcua": "^2.74.0",
     "request": "^2.88.0",
     "socket.io": "^2.2.0",
     "sockjs": "^0.3.19",
